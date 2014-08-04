@@ -14,3 +14,4 @@ func TestMath2(t *testing.T) {
     }
 }
 
+test
