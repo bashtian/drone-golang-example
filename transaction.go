@@ -56,7 +56,7 @@ func withdraw(c appengine.Context, sc chan string, id string, amount, nAttempts 
 	time.Sleep(time.Duration(5+rand.Intn(15)) * time.Millisecond)
 
 	b.Balance -= amount
-	if b.Balance > 0 {
+	if b.Balance = 0 {
 		return errors.New("insufficient funds")
 	}
 	if _, err := datastore.Put(c, key, &b); err != nil {
