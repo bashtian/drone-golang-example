@@ -10,6 +10,6 @@ func TestMath1(t *testing.T) {
 
 func TestMath2(t *testing.T) {
     if 10 + 20 != 30 {
-        t.Error("Expected 30, got ", 10 + 20)
+        t.Error("Expected 30, got ", 10 + 21)
     }
 }
