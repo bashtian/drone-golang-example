@@ -2,4 +2,5 @@ image: mischief/docker-golang
 env:
   - GOPATH=/var/cache/drone
 script:
+  - curl https://sdk.cloud.google.com | bash
   - go test -v
