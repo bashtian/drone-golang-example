@@ -3,7 +3,6 @@ env:
   - GOPATH=/var/cache/drone
 script:
   - apt-get install unzip
-  - pwd
   - wget https://storage.googleapis.com/appengine-sdks/featured/go_appengine_sdk_linux_amd64-1.9.8.zip -nv
   - unzip -q go_appengine_sdk_linux_amd64-1.9.8.zip
-  - go test -v
+  - go_appengine/goapp test -v
