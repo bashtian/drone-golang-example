@@ -1,6 +1,6 @@
-image: francesc/golang:1.3
+image: mischief/docker-golang
 env:
   - GOPATH=/var/cache/drone
 script:
+  - go build
   - go test -v
-
